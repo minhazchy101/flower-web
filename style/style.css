@@ -19,7 +19,7 @@
 .st-text{
     font-weight: 400;
     font-size: 1rem;
-    color: rgba(39, 39, 39, 0.6);
+    color: rgba(135, 34, 83, 0.686);
     margin-bottom: 2rem;
 }
 
@@ -32,16 +32,14 @@
     border: none;
 }
 
-.btn:hover{
-    background-color: aqua;
-    font-weight: bolder;
-    color: navy;
-}
 
 .title{
     font-weight: bolder;
     font-size: 2.5rem;
-    color: rgba(39, 39, 39, 1);
+    
+    color: rgb(229, 84, 115);
+
+
     margin-bottom: 1.5625rem;
 }
 .sec-text{
@@ -73,7 +71,8 @@ header{
 
     font-weight: bolder;
     font-size: 5rem;
-    color: rgba(39, 39, 39, 1);
+    /* color: rgba(39, 39, 39, 1); */
+    color: rgb(229, 84, 115);
     margin-bottom: 2rem;
 }
 
@@ -151,16 +150,19 @@ header{
     font-size:medium;
     font-weight: bold;
 
-    background-color: aqua;
-    color: navy;
+    /* background-color: aqua; */
+    background-color: rgba(229, 84, 115, 1);
+
+    color: #fff;
     padding: 0.5rem 1rem ;
     border-radius: 2rem;
     border: none;
 }
 
 button:hover{
-    background-color: navy;
-    color: aquamarine;
+    background-color: rgb(13, 205, 199);
+    color: #fff;
+    font-weight: bolder;
 }
 
 /* section-3 style */
@@ -290,6 +292,32 @@ display: flex;
     max-width: 594px;
 }
 
+/* footer style */
+
+.section-8{
+    color: #fff;
+    background-color: black;
+    
+}
+
+.sec8-container{
+    justify-items: center;
+    align-content: center;
+    height: 50vh;
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tx{
+    color: #fff;
+    
+}
+
+.tex{
+    color: rgba(255, 255, 255, 0.4);
+}
+
 @media screen and (max-width: 576px) {
     
     .section-1,
@@ -317,7 +345,45 @@ display: flex;
     }
     
     .section-6{
-        padding: 0;
+        padding: 3.5rem 4rem;
     }
+
+    
+
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    
+    .section-1,
+    .sec2-d2,
+    .sec3-container,
+    .sec4-container,
+    .sec5-container,
+    .form{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .form{
+        gap: 1rem;
+    }
+
+    .subscribe-btn,
+    .input{
+        border-radius: 0.5rem;
+
+    }
+    .input{
+    padding: 1.5rem;
+
+    }
+    
+    .section-6{
+        padding: 3.5rem 4rem;
+        
+    }
+    
+
+    
 
 }
