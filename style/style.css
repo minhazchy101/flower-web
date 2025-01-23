@@ -236,10 +236,58 @@ display: flex;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-items: center;
+    
 }
 
 .img{
     max-width: 250px;
+    margin: 2rem auto;
+}
+
+/* section-6 */
+
+.section-6{
+    background:url("../Rectangle\ 9.png" ); 
+    background-repeat: no-repeat;
+    padding: 7.625rem 17.9375rem;
+    margin: 8rem auto;
+}
+
+
+
+.tr{
+    background: transparent;
+}
+.form{
+    display: flex;
+}
+
+.input{
+    padding: 1.5rem;
+    padding-right: 22.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.subscribe-btn{
+    font-size:medium;
+    font-weight: bold;
+
+    background-color: rgba(229, 84, 115, 1);
+    color: #fff;
+    padding: 1rem 2rem ;
+    border-radius: 0.5rem;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.sec6-text{
+    max-width: 594px;
 }
 
 @media screen and (max-width: 576px) {
@@ -248,9 +296,28 @@ display: flex;
     .sec2-d2,
     .sec3-container,
     .sec4-container,
-    .sec5-container{
+    .sec5-container,
+    .form{
         flex-direction: column;
         padding: 0 1rem;
     }
+
+    .form{
+        gap: 1rem;
+    }
+
+    .subscribe-btn,
+    .input{
+        border-radius: 0.5rem;
+
+    }
+    .input{
+    padding: 1.5rem;
+
+    }
     
+    .section-6{
+        padding: 0;
+    }
+
 }
